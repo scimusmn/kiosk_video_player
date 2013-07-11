@@ -1,1 +1,26 @@
+/**
+ * "Meet the Potter" video kiosk theme.
+ */
 
+body {
+  padding: 90px 20px;
+}
+
+div.videoBox {
+  float: left;
+  width: 320px;
+  margin-right: 20px;
+}
+div.play {
+  background: url(../../assets/images/play.png);
+  background-position: 0 -68px;
+  width: 75px;
+  height: 67px;
+  position: relative;
+  top: -82px;
+  right: 8px;
+  float: right;
+}
+div.play.active {
+  background-position: 0 0;
+}
