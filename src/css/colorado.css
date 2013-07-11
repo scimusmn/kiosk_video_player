@@ -30,10 +30,10 @@ h3 {
 div.videoBox {
   float: left;
   width: 320px;
-  margin-right: 20px;
+  margin-right: 24px;
 }
 div.videoBox img {
-  box-shadow: 4px 4px 15px rgba(0,0,0,0.7);
+  box-shadow: 2px 2px 15px rgba(0,0,0,0.7);
 }
 div.play {
   background: url(../../assets/images/play.png);
