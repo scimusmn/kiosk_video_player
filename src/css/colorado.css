@@ -3,13 +3,37 @@
  */
 
 body {
+  background: url(../../assets/images/background.jpg) repeat;
   padding: 90px 20px;
+  color: #f7eed4;
+}
+
+h1 {
+  font-family: "Archer Bold", "Bookman Old Style"; /* To do - Get this font from Wendie */
+  font-size: 23px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+h2 {
+  font-family: "Tungsten-Semibold";
+  font-size: 36px;
+  text-transform: uppercase;
+  margin: 12px 0 0;
+}
+h3 {
+  font-family: "ProximaNova Semibold", "Myriad Pro"; /* To do - Get this font from Wendie */
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
 }
 
 div.videoBox {
   float: left;
   width: 320px;
   margin-right: 20px;
+}
+div.videoBox img {
+  box-shadow: 4px 4px 15px rgba(0,0,0,0.7);
 }
 div.play {
   background: url(../../assets/images/play.png);
@@ -24,3 +48,4 @@ div.play {
 div.play.active {
   background-position: 0 0;
 }
+
