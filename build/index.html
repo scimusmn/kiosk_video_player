@@ -1,0 +1,46 @@
+<!doctype html>
+<head data-template-set="html5-reset">
+  <meta charset="utf-8">
+  <title>History Colorado | Meet the Potter</title>
+  <link rel="stylesheet" href="css/potter_player.min.css" />
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <h1>Choose a video</h1>
+
+    <div class="videoBox" data-video-source="video1.mp4">
+      <img src="../assets/images/video1.jpg">
+      <div class="play"></div>
+      <h2>Meet the Potter</h2>
+      <h3>Running time: 1:30</h3>
+    </div>
+
+    <div class="videoBox" data-video-source="video2.mp4">
+      <img src="../assets/images/video2.jpg">
+      <div class="play"></div>
+      <h2>Starting the Pot</h2>
+      <h3>Running time: 1:30</h3>
+    </div>
+
+    <div class="videoBox last" data-video-source="video3.mp4">
+      <img src="../assets/images/video3.jpg">
+      <div class="play"></div>
+      <h2>Finishing the Pot</h2>
+      <h3>Running time: 1:30</h3>
+    </div>
+
+  </div>
+
+  <div class="hidden">
+    <video id="videoPlayer" class="video-js vjs-default-skin" preload="auto" height="768" width="1024">
+      <source src="../assets/videos/video1.mp4" type='video/mp4'>
+    </video>
+  </div>
+  <div id="back" class="hidden">Back</div>
+
+  <script src="js/potter_player.min.js"></script>
+
+</body>
+</html>
