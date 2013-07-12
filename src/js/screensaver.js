@@ -36,11 +36,10 @@ function timerIncrement() {
     // Add the "loop" attribute
     $('video').prop('loop', true);
 
-    // Fade out content
-    $('#wrapper').fadeOut('fast');
-
-    // Show the video
-    $('.hidden').not('#back').show();
+    // Fade out content, show the screensaver video
+    $('.wrapper').fadeOut('fast', function() {
+      $('.hidden').not('#back').show();
+    });
 
     // Change the source, change the size, start playback
     videoPlayer.src('../../assets/videos/screensaver.mp4').play();
