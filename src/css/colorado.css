@@ -4,8 +4,14 @@
 
 body {
   background: url(../../assets/images/background.jpg) repeat;
-  padding: 90px 20px;
   color: #f7eed4;
+  border: 1px dashed gray;
+  height: 768px;
+  width: 1024px;
+  overflow: hidden;
+}
+.wrapper {
+  padding: 90px 18px;
 }
 
 h1 {
@@ -30,7 +36,10 @@ h3 {
 div.videoBox {
   float: left;
   width: 320px;
-  margin-right: 24px;
+  margin-right: 14px;
+}
+div.videoBox.last {
+  margin-right: 0;
 }
 div.videoBox img {
   box-shadow: 2px 2px 15px rgba(0,0,0,0.7);
@@ -41,11 +50,32 @@ div.play {
   width: 75px;
   height: 67px;
   position: relative;
-  top: -82px;
-  right: 8px;
+  top: -78px;
+  right: 12px;
   float: right;
 }
 div.play.active {
   background-position: 0 0;
 }
 
+video {
+  position: relative;
+  z-index: 1;
+}
+#back {
+  font-family: "ProximaNova Semibold", "Myriad Pro";
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+  z-index: 2;
+  width: 164px;
+  float: right;
+  box-shadow: 0 0 8px rgba(0,0,0,0.7);
+  text-align: center;
+  padding: 18px 0 14px;
+  font-size: 22px;
+  background: rgba(0,0,0,0.5);
+}
+.hidden {
+  display: none;
+}
