@@ -24,6 +24,7 @@ $(function () {
 
 });
 
+
 /**
  * Start the screensaver after 3 minutes of inactivity.
  */
@@ -34,11 +35,12 @@ function timerIncrement() {
   }
 }
 
+
 /**
  * Screensaver: Loop the screensaver video in full-screen mode.
  */
 var screensaver = function() {
-  var videoPlayer = _V_('videoPlayer'),
+  var videoPlayer = videojs('videoPlayer'),
       playing = !videoPlayer.paused();
 
   // Add the "loop" attribute
@@ -57,6 +59,7 @@ var screensaver = function() {
   wakeUp(videoPlayer); // Watch for action, which will reload the page
 
 }
+
 
 /**
  * Clear screensaver
