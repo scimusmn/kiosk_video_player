@@ -29,28 +29,32 @@ $(function () {
  */
 function timerIncrement() {
   idleTime = idleTime + 1;
+  if ((idleTime > 2) && (!playing) && (!savedScreen)) {
+    screensaver();
+    wakeUp();
+  }
+}
+
+/**
+ * Screensaver: Loop the screensaver video in full-screen mode.
+ */
+var screensaver = function() {
   var videoPlayer = _V_('videoPlayer'),
       playing = !videoPlayer.paused();
 
-  // If it's been 3 minutes of inactivity, and a video's not playing, save the screen
-  if ((idleTime > 2) && (!playing) && (!savedScreen)) {
+  // Add the "loop" attribute
+  $('video').prop('loop', true);
 
-    // Add the "loop" attribute
-    $('video').prop('loop', true);
+  // Fade out content, show the screensaver video
+  $('.wrapper').fadeOut('fast', function() {
+    $('.hidden').not('#back').show();
+  });
 
-    // Fade out content, show the screensaver video
-    $('.wrapper').fadeOut('fast', function() {
-      $('.hidden').not('#back').show();
-    });
+  // Change the source, change the size, start playback
+  videoPlayer.src('../assets/videos/screensaver.mp4').play();
 
-    // Change the source, change the size, start playback
-    videoPlayer.src('../../assets/videos/screensaver.mp4').play();
+  savedScreen = true; // The screen has been saved!
 
-    savedScreen = true; // The screen has been saved!
-
-    wakeUp(); // Watch for mousemove, or an error, which will reload the page
-
-  }
 }
 
 /**
