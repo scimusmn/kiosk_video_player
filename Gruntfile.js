@@ -9,8 +9,8 @@ module.exports = function(grunt) {
             'build/js/potter_player.min.js': [
               'libs/jquery-2.0.3.min.js',
               'libs/video.js',
-              'source/js/video_kiosk.js',
-              'source/js/screensaver.js',
+              'src/js/video_kiosk.js',
+              'src/js/screensaver.js',
             ]
           }
         }
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
     cssmin: {
       compress: {
         files: {
-          'build/css/potter_player.min.css': ['source/css/video-js.min.css', 'source/css/build.css', 'source/css/colorado.css']
+          'build/css/potter_player.min.css': ['src/css/video-js.min.css', 'src/css/build.css', 'src/css/colorado.css']
         }
       }
     },
