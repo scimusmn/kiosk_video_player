@@ -4,6 +4,8 @@
  * See http://stackoverflow.com/a/4029518
  */
 
+var savedScreen = false; // Screen is initially not saved.
+
 $(function () {
 
   // Start the clock
@@ -31,7 +33,7 @@ function timerIncrement() {
       playing = !videoPlayer.paused();
 
   // If it's been 3 minutes of inactivity, and a video's not playing, save the screen
-  if ((idleTime > 2) && (!playing)) {
+  if ((idleTime > 2) && (!playing) && (!savedScreen)) {
 
     // Add the "loop" attribute
     $('video').prop('loop', true);
@@ -43,6 +45,8 @@ function timerIncrement() {
 
     // Change the source, change the size, start playback
     videoPlayer.src('../../assets/videos/screensaver.mp4').play();
+
+    savedScreen = true; // The screen has been saved!
 
     wakeUp(); // Watch for mousemove, or an error, which will reload the page
 
