@@ -45,6 +45,12 @@
   <script src="../libs/video.js"></script>
   <script src="js/video_kiosk.js"></script>
   <script src="js/screensaver.js"></script>
-
+  <script>
+      // Launch the screensaver on a footer double-click
+      // Handy for testing - this is not part of the production build.
+      $('body').dblclick(function() {
+        screensaver();
+      });
+    </script>
 </body>
 </html>
