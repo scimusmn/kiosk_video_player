@@ -1,1 +1,3 @@
-assets/videos/
+assets/videos/ 
+node_modules/
+npm-debug.log
