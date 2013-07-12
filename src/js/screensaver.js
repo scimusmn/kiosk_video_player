@@ -31,7 +31,6 @@ function timerIncrement() {
   idleTime = idleTime + 1;
   if ((idleTime > 2) && (!playing) && (!savedScreen)) {
     screensaver();
-    wakeUp();
   }
 }
 
@@ -55,18 +54,20 @@ var screensaver = function() {
 
   savedScreen = true; // The screen has been saved!
 
+  wakeUp(videoPlayer); // Watch for action, which will reload the page
+
 }
 
 /**
  * Clear screensaver
  */
-function wakeUp() {
+function wakeUp(videoPlayer) {
   // Refresh on mousemove
   $('body').mousemove(function (e) {
     location.reload();
   });
   // Refresh on error
-  videoPlayer.addEvent('error', function(){
+  videoPlayer.on('error', function(){
     location.reload();
   });
 }
