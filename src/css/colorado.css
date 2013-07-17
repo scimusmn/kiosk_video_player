@@ -15,21 +15,21 @@ body {
 }
 
 h1 {
-  font-family: "Archer Bold", "Bookman Old Style"; /* To do - Get this font from Wendie */
+  font-family: Archer;
   font-size: 23px;
   margin-bottom: 20px;
   font-weight: normal;
 }
 h2 {
-  font-family: "Tungsten-Semibold";
+  font-family: "Tungsten";
   font-size: 36px;
   text-transform: uppercase;
   margin: 12px 0 0;
 }
 h3 {
-  font-family: "ProximaNova Semibold", "Myriad Pro"; /* To do - Get this font from Wendie */
-  font-size: 18px;
+  font-family: "Proxima Nova";
   font-weight: normal;
+  font-size: 18px;
   margin: 0;
 }
 
