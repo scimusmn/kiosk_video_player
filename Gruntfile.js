@@ -18,7 +18,7 @@ module.exports = function(grunt) {
     cssmin: {
       compress: {
         files: {
-          'build/css/potter_player.min.css': ['src/css/video-js.min.css', 'src/css/reset.css', 'src/css/build.css', 'src/css/colorado.css']
+          'build/css/potter_player.min.css': ['src/css/video-js.min.css', 'src/css/reset.css', 'src/css/colorado.css', 'src/css/build.css']
         }
       }
     },
