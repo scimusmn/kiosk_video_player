@@ -27,6 +27,8 @@ $(function() {
 
     // Set the video source when one is selected
     $videoOption.click(function() {
+      $('div.play', this).addClass('active');
+
       var video = $(this).attr('data-video-source');
 
       console.log('Playing ' + videoPath + video);
