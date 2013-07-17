@@ -31,8 +31,7 @@ $(function () {
 function timerIncrement() {
   idleTime = idleTime + 1;
 
-  var videoPlayer = videojs('videoPlayer'),
-      playing = !videoPlayer.paused();
+  var playing = !videojs('videoPlayer').paused();
 
   if ((idleTime > 2) && (!playing) && (!savedScreen)) {
     screensaver();
@@ -54,7 +53,7 @@ var screensaver = function() {
   });
 
   // Change the source, change the size, start playback
-  videoPlayer.src('../assets/videos/screensaver.mp4').play();
+  videojs('videoPlayer').src('../assets/videos/screensaver.mp4').play();
 
   savedScreen = true; // The screen has been saved!
 
@@ -72,7 +71,7 @@ function wakeUp(videoPlayer) {
     location.reload();
   });
   // Refresh on error
-  videoPlayer.on('error', function(){
+  videojs('videoPlayer').on('error', function(){
     location.reload();
   });
 }
