@@ -17,3 +17,8 @@ body {
   user-select: none;
   border: none;
 }
+
+/* Hide the vertical scrollbar */
+html {
+  overflow-y: hidden !important
+}
