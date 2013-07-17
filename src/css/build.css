@@ -5,7 +5,9 @@
  */
 
 /* Hide the cursor */
-* { cursor: url(../../assets/images/cursor.png), none !important }
+* {
+  cursor: none;
+}
 
 /* Disable text selection */
 body {
