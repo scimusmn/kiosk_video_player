@@ -30,6 +30,10 @@ $(function () {
  */
 function timerIncrement() {
   idleTime = idleTime + 1;
+
+  var videoPlayer = videojs('videoPlayer'),
+      playing = !videoPlayer.paused();
+
   if ((idleTime > 2) && (!playing) && (!savedScreen)) {
     screensaver();
   }
@@ -40,8 +44,6 @@ function timerIncrement() {
  * Screensaver: Loop the screensaver video in full-screen mode.
  */
 var screensaver = function() {
-  var videoPlayer = videojs('videoPlayer'),
-      playing = !videoPlayer.paused();
 
   // Add the "loop" attribute
   $('video').prop('loop', true);
