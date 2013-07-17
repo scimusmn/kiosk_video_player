@@ -3,7 +3,7 @@
  */
 
 body {
-  background: url(../../assets/images/background.jpg) repeat;
+  background: url(../../assets/images/background_full.jpg) no-repeat;
   color: #f7eed4;
   border: 1px dashed gray;
   height: 768px;
