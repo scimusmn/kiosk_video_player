@@ -1,10 +1,12 @@
-# *Meet the Potter* video interactive 
-
-## Main Message
-Ancestral Puebloans made pottery for everyday use, and their designs offer insights into Puebloan society.
+## History Colorado: Simple video player
 
 ## Description 
-This will be an HTML5/JavaScript-powered video kiosk, similar to the [Maya IQ kiosks](https://github.com/scimusmn/maya-video-interviews). Visitors will interact with the videos using a touchscreen.
+This software will run on the "Meet the Potter" and "Using Yucca" kiosks. It shows the visitor 2-3 video options (depending on the kiosk) and allows them to select one for playback using a touchscreen interface.
+
+## Branches
+- The master branch holds code used on both interactives.
+- The potterPlayer branch is specific to the "Meet the Potter" component.
+- The yuccaPlayer branch is specific to the "Using Yucca" component.
 
 ## Install
 No specific instructions yet.
