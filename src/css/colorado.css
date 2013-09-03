@@ -25,6 +25,7 @@ h2 {
   font-size: 36px;
   text-transform: uppercase;
   margin: 12px 0 0;
+  clear: both;
 }
 h3 {
   font-family: "Proxima Nova";
@@ -52,7 +53,7 @@ div.play {
   width: 75px;
   height: 67px;
   position: relative;
-  top: -78px;
+  margin-top: -78px;
   right: 12px;
   float: right;
 }
