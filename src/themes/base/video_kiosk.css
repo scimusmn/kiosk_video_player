@@ -11,7 +11,7 @@ div.play {
   float: right;
 }
 div.play.medium {
-  background: url(../../assets/themes/base/play_medium.png);
+  background: url(../../../assets/themes/base/play_medium.png);
   background-position: 0 -68px;
   width: 75px;
   height: 67px;
@@ -19,7 +19,7 @@ div.play.medium {
   right: 12px;
 }
 div.play.large {
-  background: url(../../assets/themes/base/play_large.png);
+  background: url(../../../assets/themes/base/play_large.png);
   background-position: 0 -89.5px;
   width: 100px;
   height: 89px;

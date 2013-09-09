@@ -42,7 +42,7 @@ div.videoBox img {
 
 /* Sub-theme: hc_brown */
 body.hc_brown {
-  background: url(../../assets/themes/history_colorado/bg_brown.jpg) no-repeat;
+  background: url(../../../assets/themes/history_colorado/bg_brown.jpg) no-repeat;
   color: #f7eed4;
   height: 768px;
   width: 1024px;
@@ -53,7 +53,7 @@ body.hc_brown {
 
 /* Sub-theme: hc_snow */
 body.hc_snow {
-  background: url(../../assets/themes/history_colorado/bg_snow.jpg) no-repeat;
+  background: url(../../../assets/themes/history_colorado/bg_snow.jpg) no-repeat;
   color: #0183b5;
   height: 1050px;
   width: 1680px;
