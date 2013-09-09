@@ -8,5 +8,6 @@ var content = {
     {
       title : "Why is the infestation so bad?",
       subtitle : "Running time: 1:30"
-   ]
+    }
+  ]
 }
