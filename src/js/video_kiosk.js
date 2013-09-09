@@ -48,7 +48,7 @@ $(function() {
       videoPlayer.src(videoPath + video);
 
       // Hide the buttons, show the video
-      $('.wrapper').fadeOut(500, function() {
+      $('#wrapper').fadeOut(500, function() {
         $('.hidden').fadeIn('fast', function() {
           videoPlayer.play();
         });
