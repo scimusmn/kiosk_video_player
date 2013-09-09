@@ -11,13 +11,16 @@
   <div class="wrapper">
     <h1>Choose a video</h1>
 
-    <!-- Markup in this div can be copied to add more videos, just change the asset paths -->
-    <div class="videoBox" data-video-source="video1.mp4">
-      <img src="../assets/images/video1.jpg">
-      <div class="play"></div>
-      <h2></h2>
-      <h3></h3>
-    </div>
+    <script id="videos" type="text/x-handlebars-template">
+      {{#each videos}}
+        <div class="videoBox" data-video-source="video_{{@index}}.mp4">
+          <img src="../assets/images/video_{{@index}}.jpg">
+          <div class="play"></div>
+          <h2>{{title}}</h2>
+          <h3>{{subtitle}}</h3>
+        </div>
+      {{/each}}
+    </script>
 
   </div>
 
