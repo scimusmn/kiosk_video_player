@@ -10,10 +10,10 @@
 <body>
 
   <script id="smm_video_player" type="text/x-handlebars-template">
-    <h1>{{page_title}}</h1>
-    {{#each videos}}
+    <h1>{{content.page_title}}</h1>
+    {{#each content.videos}}
       <div class="videoBox" data-video-source="video_{{@index}}.mp4">
-        <img src="../assets/images/video_{{@index}}.jpg">
+        <img src="../assets/images/{{../config.theme}}/{{../config.component_id}}_video_{{@index}}.jpg">
         <div class="play large"></div>
         <h2>{{title}}</h2>
         <h3>{{subtitle}}</h3>
@@ -24,7 +24,7 @@
 
   <div class="hidden">
     <video id="videoPlayer" class="video-js vjs-default-skin" preload="auto" height="" width="">
-      <source src="../assets/videos/video0.mp4" type='video/mp4'>
+      <source src="../assets/videos/video_0.mp4" type='video/mp4'>
     </video>
   </div>
   <div id="back" class="hidden">Back</div>
@@ -38,11 +38,11 @@
   <script src="js/video_kiosk.js"></script>
   <script src="js/screensaver.js"></script>
   <script>
-      // Launch the screensaver on a footer double-click
-      // Handy for testing - this is not part of the production build.
-      $('body').dblclick(function() {
-        screensaver();
-      });
-    </script>
+    // Launch the screensaver on a footer double-click
+    // Handy for testing - this is not part of the production build.
+    $('body').dblclick(function() {
+      screensaver();
+    });
+  </script>
 </body>
 </html>
