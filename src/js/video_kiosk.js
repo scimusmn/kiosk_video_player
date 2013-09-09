@@ -13,7 +13,10 @@ $(function() {
   // Pull in the content object from content.js
   $('#wrapper').html(template(content));
 
- var $videoOption = $('.videoBox'),
+  // Add the theme name as a body class
+  $('body').addClass(config.subtheme);
+
+  var $videoOption = $('.videoBox'),
       videoPlayer = videojs('videoPlayer'),
       // Path is relative to index.html
       videoPath = '../assets/videos/';
