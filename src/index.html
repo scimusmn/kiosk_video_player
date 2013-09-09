@@ -9,9 +9,9 @@
 <body>
 
   <div class="wrapper">
-    <h1>Choose a video</h1>
+    <script id="smm_video_player" type="text/x-handlebars-template">
+      <h1>{{page_title}}</h1>
 
-    <script id="videos" type="text/x-handlebars-template">
       {{#each videos}}
         <div class="videoBox" data-video-source="video_{{@index}}.mp4">
           <img src="../assets/images/video_{{@index}}.jpg">
