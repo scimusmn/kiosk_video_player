@@ -1,20 +1,20 @@
 <!doctype html>
-<head data-template-set="html5-reset">
+<head>
   <meta charset="utf-8">
   <title>History Colorado</title>
-  <link rel="stylesheet" href="css/reset.css" />
-  <!--<link rel="stylesheet" href="css/colorado.css" />-->
+  <link rel="stylesheet" href="themes/base/reset.css" />
+  <link rel="stylesheet" href="themes/base/video_kiosk.css" />
+  <link rel="stylesheet" href="themes/history_colorado/colorado.css" />
 </head>
 
 <body>
 
   <script id="smm_video_player" type="text/x-handlebars-template">
     <h1>{{page_title}}</h1>
-
     {{#each videos}}
       <div class="videoBox" data-video-source="video_{{@index}}.mp4">
         <img src="../assets/images/video_{{@index}}.jpg">
-        <div class="play"></div>
+        <div class="play large"></div>
         <h2>{{title}}</h2>
         <h3>{{subtitle}}</h3>
       </div>
@@ -24,7 +24,7 @@
 
   <div class="hidden">
     <video id="videoPlayer" class="video-js vjs-default-skin" preload="auto" height="" width="">
-      <source src="../assets/videos/video1.mp4" type='video/mp4'>
+      <source src="../assets/videos/video0.mp4" type='video/mp4'>
     </video>
   </div>
   <div id="back" class="hidden">Back</div>
@@ -32,7 +32,9 @@
   <script src="../libs/jquery-2.0.3.min.js"></script>
   <script src="../libs/video.js"></script>
   <script src="../libs/handlebars.js"></script>
-  <script src="content/hc_0425_pine_beetles.js"></script>
+
+  <script src="content/history_colorado/hc_0425_pine_beetles.js"></script>
+
   <script src="js/video_kiosk.js"></script>
   <script src="js/screensaver.js"></script>
   <script>
