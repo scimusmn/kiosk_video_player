@@ -9,7 +9,6 @@ h1 {
   font-family: Archer;
   font-size: 23px;
   margin-bottom: 20px;
-  font-weight: normal;
 }
 h2 {
   font-family: "Tungsten";
@@ -24,16 +23,9 @@ h3 {
   font-size: 18px;
   margin: 0;
 }
-div.videoBox {
-  float: left;
-  width: 320px;
-  margin-right: 14px;
-}
 
 div.videoBox img {
   box-shadow: 2px 2px 15px rgba(0,0,0,0.7);
-  height: 430px;
-  width: 310px;
 }
 
 #back {
@@ -47,8 +39,19 @@ body.hc_brown {
   height: 768px;
   width: 1024px;
 }
-.hc_brown .wrapper {
+.hc_brown #wrapper {
   padding: 90px 18px;
+}
+.hc_brown h1 {
+  font-weight: normal;
+}
+.hc_brown .videoBox {
+  width: 320px;
+  margin-right: 14px;
+}
+.hc_brown .videoBox img {
+  height: 430px;
+  width: 310px;
 }
 
 /* Sub-theme: hc_snow */
@@ -57,4 +60,27 @@ body.hc_snow {
   color: #0183b5;
   height: 1050px;
   width: 1680px;
+}
+.hc_snow #wrapper {
+  padding: 138px 92px;
+}
+.hc_snow h1 {
+  font-size: 40px;
+}
+.hc_snow h2 {
+  font-size: 56px;
+}
+.hc_snow h3 {
+  font-size: 32px;
+}
+.hc_snow .videoBox {
+  width: 700px;
+  margin-right: 14px;
+}
+.hc_snow .video-0 {
+  margin-right: 82px;
+}
+.hc_snow .videoBox img {
+  height: 518px;
+  width: 700px;
 }

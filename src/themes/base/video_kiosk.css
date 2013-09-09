@@ -6,6 +6,10 @@ body {
   overflow: hidden;
 }
 
+div.videoBox {
+  float: left;
+}
+
 div.play {
   position: relative;
   float: right;
@@ -23,7 +27,7 @@ div.play.large {
   background-position: 0 -89.5px;
   width: 100px;
   height: 89px;
-  margin-top: -78px;
+  margin-top: -104px;
   right: 12px;
 }
 div.play.active {
@@ -45,6 +49,7 @@ video {
   text-align: center;
   padding: 18px 0 14px;
   font-size: 22px;
+  color: #FFFFFF;
   background: rgba(0,0,0,0.5);
 }
 .hidden {
