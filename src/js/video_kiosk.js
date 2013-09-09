@@ -1,9 +1,17 @@
 /**
- * Video playback functionality.
+ * Video kiosk functionality.
  * Allows video selection from the kiosk start page.
+ * Renders content into Handlebars templates.
 */
 
 $(function() {
+
+  // Get our template and turn it into HTML
+  var source   = $('#smm_video_player').html();
+  var template = Handlebars.compile(source);
+
+  // Pull in the content object from content.js
+  $('#wrapper').html(template(content));
 
  var $videoOption = $('.videoBox'),
       videoPlayer = videojs('videoPlayer'),
