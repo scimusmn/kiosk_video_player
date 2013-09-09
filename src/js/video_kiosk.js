@@ -11,10 +11,10 @@ $(function() {
   var template = Handlebars.compile(source);
 
   // Pull in the content object from content.js
-  $('#wrapper').html(template(content));
+  $('#wrapper').html(template(kiosk));
 
   // Add the theme name as a body class
-  $('body').addClass(config.subtheme);
+  $('body').addClass(kiosk.config.subtheme);
 
   var $videoOption = $('.videoBox'),
       videoPlayer = videojs('videoPlayer'),
