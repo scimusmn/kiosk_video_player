@@ -9,6 +9,7 @@ h1 {
   font-family: Archer;
   font-size: 23px;
   margin-bottom: 20px;
+  font-weight: normal;
 }
 h2 {
   font-family: "Tungsten";
@@ -41,9 +42,6 @@ body.hc_brown {
 }
 .hc_brown #wrapper {
   padding: 90px 18px;
-}
-.hc_brown h1 {
-  font-weight: normal;
 }
 .hc_brown .videoBox {
   width: 320px;
