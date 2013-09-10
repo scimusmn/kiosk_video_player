@@ -56,8 +56,8 @@ body.hc_brown {
 body.hc_snow {
   background: url(../../../assets/themes/history_colorado/bg_snow.jpg) no-repeat;
   color: #0183b5;
-  height: 1050px;
-  width: 1680px;
+  height: 768px;
+  width: 1366px;
 }
 .hc_snow #wrapper {
   padding: 138px 92px;
