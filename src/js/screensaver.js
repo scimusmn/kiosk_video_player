@@ -48,7 +48,7 @@ var screensaver = function() {
   $('video').prop('loop', true);
 
   // Fade out content, show the screensaver video
-  $('.wrapper').fadeOut('fast', function() {
+  $('#wrapper').fadeOut('fast', function() {
     $('.hidden').not('#back').show();
   });
 
