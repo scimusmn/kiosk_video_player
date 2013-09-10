@@ -1,11 +1,22 @@
 /**
- * Video playback functionality.
+ * Video kiosk functionality.
  * Allows video selection from the kiosk start page.
+ * Renders content into Handlebars templates.
 */
 
 $(function() {
 
- var $videoOption = $('.videoBox'),
+  // Get our template and turn it into HTML
+  var source   = $('#smm_video_player').html();
+  var template = Handlebars.compile(source);
+
+  // Pull in the content object from content.js
+  $('#wrapper').html(template(kiosk));
+
+  // Add the theme name as a body class
+  $('body').addClass(kiosk.config.subtheme);
+
+  var $videoOption = $('.videoBox'),
       videoPlayer = videojs('videoPlayer'),
       // Path is relative to index.html
       videoPath = '../assets/videos/';
@@ -37,7 +48,7 @@ $(function() {
       videoPlayer.src(videoPath + video);
 
       // Hide the buttons, show the video
-      $('.wrapper').fadeOut(500, function() {
+      $('#wrapper').fadeOut(500, function() {
         $('.hidden').fadeIn('fast', function() {
           videoPlayer.play();
         });

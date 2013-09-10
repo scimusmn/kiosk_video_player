@@ -1,0 +1,83 @@
+/**
+ * History Colorado video kiosk styles.
+ *
+ * Sub-themes:
+ * - hc_brown (Paint a Pot, Yucca, Meet the Potter)
+ * - hc_snow (Pine Beetles)
+ */
+h1 {
+  font-family: Archer;
+  font-size: 23px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+h2 {
+  font-family: "Tungsten";
+  font-size: 36px;
+  text-transform: uppercase;
+  margin: 12px 0 0;
+  clear: both;
+}
+h3 {
+  font-family: "Proxima Nova";
+  font-weight: normal;
+  font-size: 18px;
+  margin: 0;
+}
+
+div.videoBox img {
+  box-shadow: 2px 2px 15px rgba(0,0,0,0.7);
+}
+
+#back {
+  font-family: "ProximaNova Semibold", "Myriad Pro";
+}
+
+/* Sub-theme: hc_brown */
+body.hc_brown {
+  background: url(../../../assets/themes/history_colorado/bg_brown.jpg) no-repeat;
+  color: #f7eed4;
+  height: 768px;
+  width: 1024px;
+}
+.hc_brown #wrapper {
+  padding: 90px 18px;
+}
+.hc_brown .videoBox {
+  width: 320px;
+  margin-right: 14px;
+}
+.hc_brown .videoBox img {
+  height: 430px;
+  width: 310px;
+}
+
+/* Sub-theme: hc_snow */
+body.hc_snow {
+  background: url(../../../assets/themes/history_colorado/bg_snow.jpg) no-repeat;
+  color: #0183b5;
+  height: 768px;
+  width: 1366px;
+}
+.hc_snow #wrapper {
+  padding: 108px 72px;
+}
+.hc_snow h1 {
+  font-size: 33px;
+}
+.hc_snow h2 {
+  font-size: 46px;
+}
+.hc_snow h3 {
+  font-size: 26px;
+}
+.hc_snow .videoBox {
+  width: 570px;
+}
+.hc_snow .video-0 {
+  margin-right: 68px;
+}
+.hc_snow .videoBox img {
+  height: 422px;
+  width: 570px;
+}

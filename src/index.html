@@ -1,43 +1,48 @@
 <!doctype html>
-<head data-template-set="html5-reset">
+<head>
   <meta charset="utf-8">
   <title>History Colorado</title>
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/colorado.css" />
+  <link rel="stylesheet" href="themes/base/reset.css" />
+  <link rel="stylesheet" href="themes/base/video_kiosk.css" />
+  <link rel="stylesheet" href="themes/history_colorado/colorado.css" />
 </head>
 
 <body>
 
-  <div class="wrapper">
-    <h1>Choose a video</h1>
-
-    <!-- Markup in this div can be copied to add more videos, just change the asset paths -->
-    <div class="videoBox" data-video-source="video1.mp4">
-      <img src="../assets/images/video1.jpg">
-      <div class="play"></div>
-      <h2></h2>
-      <h3></h3>
-    </div>
-
-  </div>
+  <script id="smm_video_player" type="text/x-handlebars-template">
+    <h1>{{content.page_title}}</h1>
+    {{#each content.videos}}
+      <div class="videoBox video-{{@index}}" data-video-source="video_{{@index}}.mp4">
+        <img src="../assets/images/{{../config.theme}}/{{../config.component_id}}_video_{{@index}}.jpg">
+        <div class="play large"></div>
+        <h2>{{title}}</h2>
+        <h3>{{subtitle}}</h3>
+      </div>
+    {{/each}}
+  </script>
+  <div id="wrapper"></div>
 
   <div class="hidden">
     <video id="videoPlayer" class="video-js vjs-default-skin" preload="auto" height="" width="">
-      <source src="../assets/videos/video1.mp4" type='video/mp4'>
+      <source src="../assets/videos/video_0.mp4" type='video/mp4'>
     </video>
   </div>
   <div id="back" class="hidden">Back</div>
 
   <script src="../libs/jquery-2.0.3.min.js"></script>
   <script src="../libs/video.js"></script>
+  <script src="../libs/handlebars.js"></script>
+
+  <script src="content/history_colorado/hc_0425_pine_beetles.js"></script>
+
   <script src="js/video_kiosk.js"></script>
   <script src="js/screensaver.js"></script>
   <script>
-      // Launch the screensaver on a footer double-click
-      // Handy for testing - this is not part of the production build.
-      $('body').dblclick(function() {
-        screensaver();
-      });
-    </script>
+    // Launch the screensaver on a footer double-click
+    // Handy for testing - this is not part of the production build.
+    $('body').dblclick(function() {
+      screensaver();
+    });
+  </script>
 </body>
 </html>

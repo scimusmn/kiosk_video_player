@@ -23,7 +23,7 @@ body {
 
 /* Hide the vertical scrollbar */
 html {
-  overflow-y: hidden !important
+  overflow-y: hidden !important;
 }
 
 /* Make all the img non-reactive to any mouse events such as dragging, hovering, clicking etc */
