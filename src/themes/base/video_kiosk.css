@@ -24,9 +24,9 @@ div.play.medium {
 }
 div.play.large {
   background: url(../../../assets/themes/base/play_large.png);
-  background-position: 0 -89.5px;
+  background-position: 0 -90px;
   width: 100px;
-  height: 89px;
+  height: 90px;
   margin-top: -104px;
   right: 12px;
 }
