@@ -1,0 +1,34 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>Video player</title>
+  <link rel="stylesheet" href="theme/css/kiosk_video_player.css" />
+</head>
+
+<body>
+
+  <script id="smm_video_player" type="text/x-handlebars-template">
+    <h1>{{content.page_title}}</h1>
+    {{#each content.videos}}
+      <div class="videoBox video-{{@index}}" data-video-source="video_{{@index}}.mp4">
+        <img src="../assets/images/{{../config.theme}}/{{../config.component_id}}_video_{{@index}}.jpg">
+        <div class="play large"></div>
+        <h2>{{title}}</h2>
+        <h3>{{subtitle}}</h3>
+      </div>
+    {{/each}}
+  </script>
+  <div id="wrapper"></div>
+
+  <div class="hidden">
+    <video id="videoPlayer" class="video-js vjs-default-skin" preload="auto" height="" width="">
+      <source src="../assets/videos/video_0.mp4" type='video/mp4'>
+    </video>
+  </div>
+  <div id="back" class="hidden">Back</div>
+
+  <script src="js/kiosk_video_player.js"></script>
+
+</body>
+</html>
+
