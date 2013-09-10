@@ -60,25 +60,24 @@ body.hc_snow {
   width: 1366px;
 }
 .hc_snow #wrapper {
-  padding: 138px 92px;
+  padding: 108px 72px;
 }
 .hc_snow h1 {
-  font-size: 40px;
+  font-size: 33px;
 }
 .hc_snow h2 {
-  font-size: 56px;
+  font-size: 46px;
 }
 .hc_snow h3 {
-  font-size: 32px;
+  font-size: 26px;
 }
 .hc_snow .videoBox {
-  width: 700px;
-  margin-right: 14px;
+  width: 570px;
 }
 .hc_snow .video-0 {
-  margin-right: 82px;
+  margin-right: 68px;
 }
 .hc_snow .videoBox img {
-  height: 518px;
-  width: 700px;
+  height: 422px;
+  width: 570px;
 }
