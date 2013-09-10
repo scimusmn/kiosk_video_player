@@ -60,7 +60,7 @@ body.hc_snow {
   width: 1366px;
 }
 .hc_snow #wrapper {
-  padding: 108px 72px;
+  padding: 78px 72px;
 }
 .hc_snow h1 {
   font-size: 33px;
@@ -80,4 +80,8 @@ body.hc_snow {
 .hc_snow .videoBox img {
   height: 422px;
   width: 570px;
+}
+.hc_snow #back {
+  background: #0183b5;
+  opacity: .85;
 }
