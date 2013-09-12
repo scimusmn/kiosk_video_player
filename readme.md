@@ -18,26 +18,25 @@ Example: `history_colorado`
   * Theme: Use the same string you used for the folder in step 1. This is used to pull in media assets (videos, images).
   * Subtheme: This will be added as a body class to the HTML document and allows for overriding theme styles per-component if needed.
   * Component_ID: The component number for this kiosk. Used to pull in thumbnail images.
-4. Open up `src/index.html` and swap out the content JS file [here](https://github.com/scimusmn/kiosk_video_player/blob/master/src/index.html#L36).
 
 #### Whip up some media assets
-5. Videos should be rendered in an MP4 wrapper and saved to `assets/videos`. 
+1. Videos should be rendered in an MP4 wrapper and saved to `assets/videos`.
   * Name the files `video_0.mp4`, `video_1.mp4`, `video_2.mp4`, etc.
-6. Thumbnails should be JPGs and saved to `assets/images/your-project-name` (same name from step 1).
+2. Thumbnails should be JPGs and saved to `assets/images/your-project-name`. Use the same folder name that you used for content.
 * Name the files using the component number and the video number they go with. 
 Examples: `0425_video_0.jpg`, `0425_video_1.jpg`, `0425_video_2.jpg`, etc
 
 #### Add a theme
-7. Make a new folder for the project's theme in `src/themes`. Use the same name you used for the content folder in step 1.
-8. Create a stylesheet in that folder. CSS it up.
-9. Files you reference from the stylesheet (for example, a background image) should be saved to `assets/themes/your-project-name`.
+1. Make a new folder for the project's theme in `src/themes`. Use the same name you used for the content folder and the media folder.
+2. Create a stylesheet in that folder. CSS it up.
+3. Files you reference from the stylesheet (for example, a background image) should be saved to `assets/themes/your-project-name`.
 
 #### Compile a build 
-10. To compile builds, you'll need to install [Grunt](http://gruntjs.com/getting-started) (and its dependencies).
-11. Since this project has already been configured with a package.json and a Gruntfile, you can quickly install all the dependencies for the project's Grunt tasks by running `npm install` from the project directory.
-12. Update `package.json` to reference the files you created in the `content` and `themes` directories. 
-13. After making changes to files in the `src` directory as described above, update the build by running `grunt` from the root of the project folder.
-14. Install the completed build onto the kiosk computer as described above.
+1. To compile builds, you'll need to install [Grunt](http://gruntjs.com/getting-started) (and its dependencies).
+2. Since this project has already been configured with a package.json and a Gruntfile, you can quickly install all the dependencies for the project's Grunt tasks by running `npm install` from the project directory.
+3. Update `package.json` to reference the files you created in the `content` and `themes` directories.
+4. After making changes to files in the `src` directory as described above, update the build by running `grunt` from the root of the project folder.
+5. Install the completed build onto the kiosk computer as described above.
 
 ### Roadmap/TODOs
 * Think about whether or not builds should be saved in this repository.
@@ -45,5 +44,5 @@ Examples: `0425_video_0.jpg`, `0425_video_1.jpg`, `0425_video_2.jpg`, etc
 * Set up Grunt to precompile the Handlebars template and include the runtime instead of the whole jam.
 * Implement a grid system (or something) so that X amount of videos will lay out nicely without much custom per-component CSS.
 * Unit tests?
-* Create template files or a script to create those instead of having a step be to copy content from another project.
+* Create a script to directories, files and templates needed for a new project.
 * Think of a cuter name than "kiosk video player." `!important`
