@@ -9,6 +9,9 @@ body {
 div.videoBox {
   float: left;
 }
+div.videoBox:last-child {
+  margin-right: 0;
+}
 
 div.play {
   position: relative;
