@@ -1,0 +1,16 @@
+/**
+ * @file theme_template.css
+ *
+ * Write some CSS here.
+ * Define backgrounds, text styles, colors, thumbnail sizing, spacing, etc.
+ *
+ * If you're using any files, like a background image or an @font-face defined font,
+ * those should be saved in assets/themes/your-project-name.
+ *
+ * This stylesheet will be included on all kiosks within the project. If you need to
+ * override a project style for a specific component, use the body class with your
+ * sub-theme name, which is added to the DOM by video_kiosk.js.
+ *
+ * When you're done here, rename the file to something project-specific, and remove
+ * this comment block.
+ */
