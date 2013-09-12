@@ -7,6 +7,6 @@
     "grunt-contrib-cssmin": "~0.5.0",
     "grunt-smushit": "~0.4.0"
   },
-  "contentFile": "src/content/history_colorado/hc_0425_pine_beetles.js",
+  "contentFile": "src/content/history_colorado/hc_0213_yucca_weaving.js",
   "themeFile": "src/themes/history_colorado/colorado.css"
 }
