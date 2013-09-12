@@ -52,6 +52,11 @@ body.hc_brown_wide {
   height: 430px;
   width: 310px;
 }
+.hc_brown #back,
+.hc_brown_wide #back {
+  background: rgba(247, 238, 212, .57);
+  color: #1e1d1a;
+}
 body.hc_brown_wide {
   width: 1366px;
   background: url(../../../assets/themes/history_colorado/bg_brown_wide.jpg) no-repeat;
