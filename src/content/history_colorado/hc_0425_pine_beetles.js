@@ -18,4 +18,3 @@ var kiosk = {
     component_id: "0425"
   }
 }
-
