@@ -4,7 +4,7 @@ If this is the first component for a new exhibit project:
   1. Think of a good name for the project - lowercase, underscores replacing spaces, recognizable but short. Something like "maya" or "history_colorado".
   2. Run `new-project.sh` with the project name as an argument to create required files: `./new-project.sh your_project_name`
 
-If this *is not* the first video component for a project, you'll use your existing content and theme folders.
+If this **is not** the first video component for a project, you'll use your existing content and theme folders.
   * Your new component should use the same stylesheet. This will keep styles consistent across an exhibit. Notes on overriding styles using the sub-theme property are in the [CSS template file](https://github.com/scimusmn/kiosk_video_player/blob/master/src/themes/theme_template.css).
   * Your new component should have its own content JS file. Copy your existing one, or the template, edit as needed, and give the file a component-specific file name.
 
