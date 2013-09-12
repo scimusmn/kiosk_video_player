@@ -33,8 +33,9 @@ div.videoBox img {
   font-family: "Proxima Nova", "Myriad Pro";
 }
 
-/* Sub-theme: hc_brown */
-body.hc_brown {
+/* Sub-themes: hc_brown, hc_brown_wide */
+body.hc_brown,
+body.hc_brown_wide {
   background: url(../../../assets/themes/history_colorado/bg_brown.jpg) no-repeat;
   color: #f7eed4;
   height: 768px;
@@ -50,6 +51,21 @@ body.hc_brown {
 .hc_brown .videoBox img {
   height: 430px;
   width: 310px;
+}
+body.hc_brown_wide {
+  width: 1366px;
+  background: url(../../../assets/themes/history_colorado/bg_brown_wide.jpg) no-repeat;
+}
+.hc_brown_wide #wrapper {
+  padding: 90px 80px;
+}
+.hc_brown_wide .videoBox {
+  width: 354px;
+  margin-right: 72px;
+}
+.hc_brown_wide .videoBox img {
+  width: 344px;
+  height: 493px;
 }
 
 /* Sub-theme: hc_snow */
