@@ -10,8 +10,9 @@ var kiosk = {
         title : "Preparing yucca fibers",
         subtitle : "Running time: 1:30"
       },
-        titie : "Making cordage",
-        subtitle : "Runnig time: 1:30"
+      {
+        title : "Making cordage",
+        subtitle : "Running time: 1:30"
       }
     ]
   },
@@ -21,5 +22,3 @@ var kiosk = {
     component_id: "0213"
   }
 }
-
-
