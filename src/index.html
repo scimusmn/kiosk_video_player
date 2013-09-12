@@ -4,7 +4,6 @@
   <title>Video player</title>
   <link rel="stylesheet" href="themes/base/reset.css" />
   <link rel="stylesheet" href="themes/base/video_kiosk.css" />
-  <link rel="stylesheet" href="themes/history_colorado/colorado.css" />
 </head>
 
 <body>
@@ -33,12 +32,24 @@
   <script src="../libs/video.js"></script>
   <script src="../libs/handlebars.js"></script>
 
-  <script src="content/history_colorado/hc_0213_yucca_weaving.js"></script>
+  <script>
+    // Read the config file to get our theme and content files
+    var config = '../package.json';
+    $.getJSON(config, function(data) {
+      var contentFile = data.contentFile,
+          themeFile = data.themeFile;
 
+      // Add theme CSS to the page
+      $('head').append('<link rel="stylesheet" href="../'+ themeFile +'" />');
+
+    });
+  </script>
+
+  <script src="content/history_colorado/hc_0213_yucca_weaving.js"></script>
   <script src="js/video_kiosk.js"></script>
   <script src="js/screensaver.js"></script>
   <script>
-    // Launch the screensaver on a footer double-click
+    // Launch the screensaver on a double-click
     // Handy for testing - this is not part of the production build.
     $('body').dblclick(function() {
       screensaver();
