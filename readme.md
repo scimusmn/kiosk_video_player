@@ -35,15 +35,15 @@ Examples: `0425_video_0.jpg`, `0425_video_1.jpg`, `0425_video_2.jpg`, etc
 #### Compile a build 
 10. To compile builds, you'll need to install [Grunt](http://gruntjs.com/getting-started) (and its dependencies).
 11. Since this project has already been configured with a package.json and a Gruntfile, you can quickly install all the dependencies for the project's Grunt tasks by running `npm install` from the project directory.
-12. Update `Gruntfile.js` to reference the files you created in the `content` and `themes` directories. Remove references to files from past projects.
+12. Update `package.json` to reference the files you created in the `content` and `themes` directories. 
 13. After making changes to files in the `src` directory as described above, update the build by running `grunt` from the root of the project folder.
 14. Install the completed build onto the kiosk computer as described above.
 
 ### Roadmap/TODOs
 * Think about whether or not builds should be saved in this repository.
 * Same with text and image (thumbnail) content.
-* `Gruntfile.js` has to be updated per component. Maybe it should take arguments from the kiosk config object, or something, so it doesn't have to change.
 * Set up Grunt to precompile the Handlebars template and include the runtime instead of the whole jam.
 * Implement a grid system (or something) so that X amount of videos will lay out nicely without much custom per-component CSS.
 * Unit tests?
+* Create template files or a script to create those instead of having a step be to copy content from another project.
 * Think of a cuter name than "kiosk video player." `!important`
