@@ -6,5 +6,7 @@
     "grunt-contrib-uglify": "~0.2.0",
     "grunt-contrib-cssmin": "~0.5.0",
     "grunt-smushit": "~0.4.0"
-  }
+  },
+  "contentFile": "src/content/history_colorado/hc_0425_pine_beetles.js",
+  "themeFile": "src/themes/history_colorado/colorado.css"
 }

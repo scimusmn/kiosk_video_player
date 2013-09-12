@@ -12,7 +12,7 @@ module.exports = function(grunt) {
             'libs/handlebars.js',
             'src/js/video_kiosk.js',
             'src/js/screensaver.js',
-            'src/content/history_colorado/hc_0425_pine_beetles.js'
+            '<%= pkg.contentFile %>'
           ]
         }
       }
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
           'build/theme/css/kiosk_video_player.css': [
             'src/themes/base/reset.css',
             'src/themes/base/video_kiosk.css',
-            'src/themes/history_colorado/colorado.css',
+            '<%= pkg.themeFile %>',
             'src/themes/base/build.css'
           ]
         }
