@@ -12,9 +12,7 @@ HTML5 and JavaScript-powered video player for use on an exhibit kiosk with a tou
 Starting a new video kiosk? Follow directions [here](https://github.com/scimusmn/kiosk_video_player/blob/master/src/readme.md).
 
 ### Roadmap/TODOs
-* Think about whether or not builds should be saved in this repository.
-* Same with text and image (thumbnail) content.
 * Set up Grunt to precompile the Handlebars template and include the runtime instead of the whole jam.
-* Implement a grid system (or something) so that X amount of videos will lay out nicely without much custom per-component CSS.
-* Unit tests?
+* Implement a grid system so that X amount of videos will lay out nicely without much custom per-component CSS.
+* Unit tests
 * Think of a cuter name than "kiosk video player." `!important`
