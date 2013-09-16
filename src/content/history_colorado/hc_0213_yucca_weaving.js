@@ -8,11 +8,11 @@ var kiosk = {
       },
       {
         title : "Preparing yucca fibers",
-        subtitle : "Running time: 1:30"
+        subtitle : "Running time: 2:04"
       },
       {
         title : "Making cordage",
-        subtitle : "Running time: 1:30"
+        subtitle : "Running time: 1:58"
       }
     ]
   },
