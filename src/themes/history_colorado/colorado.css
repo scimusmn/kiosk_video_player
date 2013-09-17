@@ -17,6 +17,7 @@ h2 {
   text-transform: uppercase;
   margin: 12px 0 0;
   clear: both;
+  font-weight: normal;
 }
 h3 {
   font-family: "Proxima Nova";
