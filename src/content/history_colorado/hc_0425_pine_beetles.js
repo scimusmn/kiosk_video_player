@@ -4,11 +4,11 @@ var kiosk = {
     videos: [
       {
         title : "How do pine beetles kill trees?",
-        subtitle : "Running time: 2:22"
+        subtitle : "Running time: 2:14"
       },
       {
         title : "Why is the infestation so bad?",
-        subtitle : "Running time: 2:14"
+        subtitle : "Running time: 2:22"
       }
     ]
   },
